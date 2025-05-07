@@ -1,3 +1,4 @@
+#if UNITY_WEBGL
 using System.Collections.Generic;
 using System.Text;
 using Playgama;
@@ -175,3 +176,5 @@ public class PlaygamaIAP : MonoBehaviour
         catalogue.SetActive(status);
     }
 }
+
+#endif

@@ -1,3 +1,4 @@
+#if UNITY_WEBGL
 using System;
 using TMPro;
 using UnityEngine;
@@ -53,3 +54,5 @@ public class IAPButton : MonoBehaviour
     
     
 }
+
+#endif
