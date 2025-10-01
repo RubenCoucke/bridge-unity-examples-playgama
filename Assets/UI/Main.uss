@@ -85,3 +85,75 @@
     -unity-background-image-tint-color: var(--color-green);
     background-image: url("project:/Assets/Icons/Game.svg");
 }
+
+#StorageButton > .main-btn > Label {
+    color: var(--color-light-blue);
+}
+
+#StorageButton > .main-btn > .main-btn__icon > VisualElement {
+    -unity-background-image-tint-color: var(--color-light-blue);
+    background-image: url("project:/Assets/Icons/Storage.svg");
+}
+
+#AdvertisementButton > .main-btn > Label {
+    color: var(--color-pink);
+}
+
+#AdvertisementButton > .main-btn > .main-btn__icon > VisualElement {
+    -unity-background-image-tint-color: var(--color-pink);
+    background-image: url("project:/Assets/Icons/Advertisement.svg");
+}
+
+#PlayerButton > .main-btn > Label {
+    color: var(--color-light-green);
+}
+
+#PlayerButton > .main-btn > .main-btn__icon > VisualElement {
+    -unity-background-image-tint-color: var(--color-light-green);
+    background-image: url("project:/Assets/Icons/Player.svg");
+}
+
+#SocialButton > .main-btn > Label {
+    color: var(--color-dark-blue);
+}
+
+#SocialButton > .main-btn > .main-btn__icon > VisualElement {
+    -unity-background-image-tint-color: var(--color-dark-blue);
+    background-image: url("project:/Assets/Icons/Social.svg");
+}
+
+#LeaderboardsButton > .main-btn > Label {
+    color: var(--color-red);
+}
+
+#LeaderboardsButton > .main-btn > .main-btn__icon > VisualElement {
+    -unity-background-image-tint-color: var(--color-red);
+    background-image: url("project:/Assets/Icons/Leaderboards.svg");
+}
+
+#PaymentsButton > .main-btn > Label {
+    color: var(--color-yellow);
+}
+
+#PaymentsButton > .main-btn > .main-btn__icon > VisualElement {
+    -unity-background-image-tint-color: var(--color-yellow);
+    background-image: url("project:/Assets/Icons/Payments.svg");
+}
+
+#AchievementsButton > .main-btn > Label {
+    color: var(--color-azure);
+}
+
+#AchievementsButton > .main-btn > .main-btn__icon > VisualElement {
+    -unity-background-image-tint-color: var(--color-azure);
+    background-image: url("project:/Assets/Icons/Achievements.svg");
+}
+
+#RemoteConfigButton > .main-btn > Label {
+    color: var(--color-grey);
+}
+
+#RemoteConfigButton > .main-btn > .main-btn__icon > VisualElement {
+    -unity-background-image-tint-color: var(--color-grey);
+    background-image: url("project:/Assets/Icons/RemoteConfig.svg");
+}

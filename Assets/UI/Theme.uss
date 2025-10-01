@@ -8,6 +8,14 @@
     --color-purple: #AF72FE;
     --color-orange: #FF6B4A;
     --color-green: #66C64F;
+    --color-light-blue: #6CC3F5;
+    --color-pink: #FF5ABF;
+    --color-light-green: #BCE648;
+    --color-dark-blue: #5B8FFF;
+    --color-red: #FB3E67;
+    --color-yellow: #FF9A2E;
+    --color-azure: #00C2B2;
+    --color-grey: #A2A2A8;
 }
 
 Label {
