@@ -1,0 +1,87 @@
+﻿.container {
+    background-color: var(--color-background);
+    border-radius: var(--border-radius);
+    height: 400px;
+    width: 680px;
+    padding-bottom: -4;
+}
+
+.header {
+    height: 56px;
+    width: 680px;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 12px 8px;
+}
+
+.header__icon-outer-container {
+    width: 100px;
+    height: 32px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__icon-inner-container {
+    padding-right: 16px;
+    padding-left: 16px;
+    height: 32px;
+    width: 32px;
+    background-color: var(--color-white);
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.header__icon {
+    background-image: url("project:/Assets/Icons/Bridge.svg");
+    width: 16px;
+    height: 16px;
+}
+
+.header__text {
+    background-image: url("project:/Assets/Icons/Bridge_Text.svg");
+    width: 60px;
+    height: 15px;
+}
+
+.buttons-container-row {
+    padding-left: 8px;
+    padding-right: 8px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 4px;
+}
+
+.main-btn {
+    background-color: var(--color-light-background);
+    width: 218px;
+}
+
+#PlatformButton > .main-btn > Label {
+    color: var(--color-purple);
+}
+
+#PlatformButton > .main-btn > .main-btn__icon > VisualElement {
+    -unity-background-image-tint-color: var(--color-purple);
+    background-image: url("project:/Assets/Icons/Platform.svg");
+}
+
+#DeviceButton > .main-btn > Label {
+    color: var(--color-orange);
+}
+
+#DeviceButton > .main-btn > .main-btn__icon > VisualElement {
+    -unity-background-image-tint-color: var(--color-orange);
+    background-image: url("project:/Assets/Icons/Device.svg");
+}
+
+#GameButton > .main-btn > Label {
+    color: var(--color-green);
+}
+
+#GameButton > .main-btn > .main-btn__icon > VisualElement {
+    -unity-background-image-tint-color: var(--color-green);
+    background-image: url("project:/Assets/Icons/Game.svg");
+}

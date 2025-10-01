@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd">
+    <engine:Template name="MainButton" src="MainButton.uxml" />
+    <engine:Style src="Main.uss" />
+    <engine:VisualElement class="container">
+        <engine:VisualElement class="header">
+            <engine:VisualElement class="header__icon-outer-container">
+                <engine:VisualElement class="header__icon-inner-container">
+                    <engine:VisualElement class="header__icon" />
+                </engine:VisualElement>
+                <engine:VisualElement class="header__text" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement class="buttons-container-row">
+            <engine:Instance template="MainButton" name="PlatformButton">
+                <engine:AttributeOverrides element-name="text" text="Platform" />
+            </engine:Instance>
+            <engine:Instance template="MainButton" name="DeviceButton">
+                <engine:AttributeOverrides element-name="text" text="Device" />
+            </engine:Instance>
+            <engine:Instance template="MainButton" name="GameButton">
+                <engine:AttributeOverrides element-name="text" text="Game" />
+            </engine:Instance>
+        </engine:VisualElement>
+        <engine:VisualElement class="buttons-container-row">
+            <engine:Instance template="MainButton" />
+            <engine:Instance template="MainButton" />
+            <engine:Instance template="MainButton" />
+        </engine:VisualElement>
+        <engine:VisualElement class="buttons-container-row">
+            <engine:Instance template="MainButton" />
+            <engine:Instance template="MainButton" />
+            <engine:Instance template="MainButton" />
+        </engine:VisualElement>
+        <engine:VisualElement class="buttons-container-row">
+            <engine:Instance template="MainButton" />
+            <engine:Instance template="MainButton" />
+            <engine:Instance template="MainButton" class="hidden"/>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>
