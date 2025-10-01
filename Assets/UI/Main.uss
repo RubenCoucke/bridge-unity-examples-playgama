@@ -40,7 +40,7 @@
 }
 
 .header__text {
-    background-image: url("project:/Assets/Icons/Bridge_Text.svg");
+    background-image: url("project:/Assets/Icons/BridgeText.svg");
     width: 60px;
     height: 15px;
 }
@@ -59,101 +59,238 @@
     width: 218px;
 }
 
-#PlatformButton > .main-btn > Label {
+.main-btn {
+    background-color: var(--color-light-background);
+    width: 218px;
+}
+
+.main-btn__arrow {
+    background-image: url("project:/Assets/Icons/ArrowRight.svg");
+    height: 9px;
+    width: 16px;
+    margin-top: 2px;
+    -unity-background-image-tint-color: var(--color-light-background);
+}
+
+#PlatformButton:hover > .main-btn {
+    background-color: var(--color-purple);
+}
+
+#PlatformButton > .main-btn > VisualElement> Label {
     color: var(--color-purple);
+}
+
+#PlatformButton:hover > .main-btn > VisualElement> Label {
+    color: var(--color-light-background);
 }
 
 #PlatformButton > .main-btn > .main-btn__icon > VisualElement {
     -unity-background-image-tint-color: var(--color-purple);
     background-image: url("project:/Assets/Icons/Platform.svg");
 }
+#PlatformButton:hover > .main-btn > .main-btn__icon > VisualElement {
+    -unity-background-image-tint-color: var(--color-light-background);
+}
 
-#DeviceButton > .main-btn > Label {
+
+#DeviceButton:hover > .main-btn {
+    background-color: var(--color-orange);
+}
+#DeviceButton > .main-btn > VisualElement> Label {
     color: var(--color-orange);
+}
+
+#DeviceButton:hover > .main-btn > VisualElement> Label {
+    color: var(--color-light-background);
 }
 
 #DeviceButton > .main-btn > .main-btn__icon > VisualElement {
     -unity-background-image-tint-color: var(--color-orange);
     background-image: url("project:/Assets/Icons/Device.svg");
 }
+#DeviceButton:hover > .main-btn > .main-btn__icon > VisualElement {
+    -unity-background-image-tint-color: var(--color-light-background);
+}
 
-#GameButton > .main-btn > Label {
+#GameButton:hover > .main-btn {
+    background-color: var(--color-green);
+}
+#GameButton > .main-btn > VisualElement> Label {
     color: var(--color-green);
+}
+
+#GameButton:hover > .main-btn > VisualElement> Label {
+    color: var(--color-light-background);
 }
 
 #GameButton > .main-btn > .main-btn__icon > VisualElement {
     -unity-background-image-tint-color: var(--color-green);
     background-image: url("project:/Assets/Icons/Game.svg");
 }
+#GameButton:hover > .main-btn > .main-btn__icon > VisualElement {
+    -unity-background-image-tint-color: var(--color-light-background);
+}
 
-#StorageButton > .main-btn > Label {
+#StorageButton:hover > .main-btn {
+    background-color: var(--color-light-blue);
+}
+
+#StorageButton > .main-btn > VisualElement> Label {
     color: var(--color-light-blue);
+}
+
+#StorageButton:hover > .main-btn > VisualElement> Label {
+    color: var(--color-light-background);
 }
 
 #StorageButton > .main-btn > .main-btn__icon > VisualElement {
     -unity-background-image-tint-color: var(--color-light-blue);
     background-image: url("project:/Assets/Icons/Storage.svg");
 }
+#StorageButton:hover > .main-btn > .main-btn__icon > VisualElement {
+    -unity-background-image-tint-color: var(--color-light-background);
+}
 
-#AdvertisementButton > .main-btn > Label {
+#AdvertisementButton:hover > .main-btn {
+    background-color: var(--color-pink);
+}
+
+#AdvertisementButton > .main-btn > VisualElement> Label {
     color: var(--color-pink);
+}
+
+#AdvertisementButton:hover > .main-btn > VisualElement> Label {
+    color: var(--color-light-background);
 }
 
 #AdvertisementButton > .main-btn > .main-btn__icon > VisualElement {
     -unity-background-image-tint-color: var(--color-pink);
     background-image: url("project:/Assets/Icons/Advertisement.svg");
 }
+#AdvertisementButton:hover > .main-btn > .main-btn__icon > VisualElement {
+    -unity-background-image-tint-color: var(--color-light-background);
+}
 
-#PlayerButton > .main-btn > Label {
+#PlayerButton:hover > .main-btn {
+    background-color: var(--color-light-green);
+}
+
+#PlayerButton > .main-btn > VisualElement> Label {
     color: var(--color-light-green);
+}
+
+#PlayerButton:hover > .main-btn > VisualElement> Label {
+    color: var(--color-light-background);
 }
 
 #PlayerButton > .main-btn > .main-btn__icon > VisualElement {
     -unity-background-image-tint-color: var(--color-light-green);
     background-image: url("project:/Assets/Icons/Player.svg");
 }
+#PlayerButton:hover > .main-btn > .main-btn__icon > VisualElement {
+    -unity-background-image-tint-color: var(--color-light-background);
+}
 
-#SocialButton > .main-btn > Label {
+#SocialButton:hover > .main-btn {
+    background-color: var(--color-dark-blue);
+}
+
+#SocialButton > .main-btn > VisualElement> Label {
     color: var(--color-dark-blue);
+}
+
+#SocialButton:hover > .main-btn > VisualElement> Label {
+    color: var(--color-light-background);
 }
 
 #SocialButton > .main-btn > .main-btn__icon > VisualElement {
     -unity-background-image-tint-color: var(--color-dark-blue);
     background-image: url("project:/Assets/Icons/Social.svg");
 }
+#SocialButton:hover > .main-btn > .main-btn__icon > VisualElement {
+    -unity-background-image-tint-color: var(--color-light-background);
+}
 
-#LeaderboardsButton > .main-btn > Label {
+
+#LeaderboardsButton:hover > .main-btn {
+    background-color: var(--color-red);
+}
+#LeaderboardsButton > .main-btn > VisualElement> Label {
     color: var(--color-red);
+}
+
+#LeaderboardsButton:hover > .main-btn > VisualElement> Label {
+    color: var(--color-light-background);
 }
 
 #LeaderboardsButton > .main-btn > .main-btn__icon > VisualElement {
     -unity-background-image-tint-color: var(--color-red);
     background-image: url("project:/Assets/Icons/Leaderboards.svg");
 }
+#LeaderboardsButton:hover > .main-btn > .main-btn__icon > VisualElement {
+    -unity-background-image-tint-color: var(--color-light-background);
+}
 
-#PaymentsButton > .main-btn > Label {
+
+#PaymentsButton:hover > .main-btn {
+    background-color: var(--color-yellow);
+}
+
+#PaymentsButton > .main-btn > VisualElement> Label {
     color: var(--color-yellow);
+}
+
+#PaymentsButton:hover > .main-btn > VisualElement> Label {
+    color: var(--color-light-background);
 }
 
 #PaymentsButton > .main-btn > .main-btn__icon > VisualElement {
     -unity-background-image-tint-color: var(--color-yellow);
     background-image: url("project:/Assets/Icons/Payments.svg");
 }
+#PaymentsButton:hover > .main-btn > .main-btn__icon > VisualElement {
+    -unity-background-image-tint-color: var(--color-light-background);
+}
 
-#AchievementsButton > .main-btn > Label {
+
+#AchievementsButton:hover > .main-btn {
+    background-color: var(--color-azure);
+}
+
+#AchievementsButton > .main-btn > VisualElement> Label {
     color: var(--color-azure);
+}
+
+#AchievementsButton:hover > .main-btn > VisualElement> Label {
+    color: var(--color-light-background);
 }
 
 #AchievementsButton > .main-btn > .main-btn__icon > VisualElement {
     -unity-background-image-tint-color: var(--color-azure);
     background-image: url("project:/Assets/Icons/Achievements.svg");
 }
+#AchievementsButton:hover > .main-btn > .main-btn__icon > VisualElement {
+    -unity-background-image-tint-color: var(--color-light-background);
+}
 
-#RemoteConfigButton > .main-btn > Label {
+#RemoteConfigButton > .main-btn > VisualElement> Label {
     color: var(--color-grey);
 }
 
 #RemoteConfigButton > .main-btn > .main-btn__icon > VisualElement {
     -unity-background-image-tint-color: var(--color-grey);
+    background-image: url("project:/Assets/Icons/RemoteConfig.svg");
+}
+
+#RemoteConfigButton:hover > .main-btn {
+    background-color: var(--color-grey);
+}
+
+#RemoteConfigButton:hover > .main-btn > VisualElement> Label {
+    color: var(--color-light-background);
+}
+
+#RemoteConfigButton:hover > .main-btn > .main-btn__icon > VisualElement {
+    -unity-background-image-tint-color: var(--color-light-background);
     background-image: url("project:/Assets/Icons/RemoteConfig.svg");
 }

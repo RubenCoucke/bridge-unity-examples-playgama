@@ -50,6 +50,13 @@ Label {
 .main-btn__title {
     font-size: 13px;
     height: 13px;
+    margin-bottom: 4px;
+}
+
+.main-btn_inner-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .hidden {
