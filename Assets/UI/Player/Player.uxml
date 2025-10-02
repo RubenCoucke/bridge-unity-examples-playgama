@@ -39,11 +39,11 @@
                     <engine:Label text="Player Avatar:" class="id-value-container__id" />
                 </engine:VisualElement>
             </engine:VisualElement>
-            <engine:VisualElement class="margin-bottom">
+            <engine:VisualElement class="margin-bottom" name="avatar-container">
                 <engine:VisualElement class="avatar"/>
             </engine:VisualElement>
             <engine:VisualElement class="row">
-                <engine:Button text="Authorize" />
+                <engine:Button text="Authorize" name="authorize"/>
             </engine:VisualElement>
         </engine:ScrollView>
     </engine:VisualElement>

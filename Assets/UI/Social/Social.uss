@@ -13,6 +13,11 @@ Button:hover {
      background-color: var(--color-btn-primary-highlighted);
  }
 
+
+Button:disabled {
+    background-color: var(--color-btn-primary);
+}
+
 .context-container__title {
     font-size: 18px;
     -unity-font-style: bold;

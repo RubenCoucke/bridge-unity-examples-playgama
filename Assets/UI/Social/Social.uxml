@@ -29,8 +29,8 @@
                 </engine:VisualElement>
             </engine:VisualElement>
             <engine:VisualElement class="row margin-bottom">
-                <engine:Button text="Share" />
-                <engine:Button text="Join Community" />
+                <engine:Button text="Share" name="share"/>
+                <engine:Button text="Join Community" name="join-community"/>
             </engine:VisualElement>
             <engine:VisualElement class="divider margin-bottom" />
             <engine:VisualElement class="id-values margin-bottom">
@@ -44,8 +44,8 @@
                 </engine:VisualElement>
             </engine:VisualElement>
             <engine:VisualElement class="row margin-bottom">
-                <engine:Button text="Invite Friends" />
-                <engine:Button text="Create a Post" />
+                <engine:Button text="Invite Friends" name="invite-friends" />
+                <engine:Button text="Create a Post" name="create-post"/>
             </engine:VisualElement>
             <engine:VisualElement class="divider margin-bottom" />
             <engine:VisualElement class="id-values margin-bottom">
@@ -59,8 +59,8 @@
                 </engine:VisualElement>
             </engine:VisualElement>
             <engine:VisualElement class="row margin-bottom">
-                <engine:Button text="Add to Favorites" />
-                <engine:Button text="Add to Home Screen" />
+                <engine:Button text="Add to Favorites" name="add-to-favorites"/>
+                <engine:Button text="Add to Home Screen" name="add-to-home-screen"/>
             </engine:VisualElement>
             <engine:VisualElement class="divider margin-bottom" />
             <engine:VisualElement class="id-values margin-bottom">
@@ -74,7 +74,7 @@
                 </engine:VisualElement>
             </engine:VisualElement>
             <engine:VisualElement class="row margin-bottom">
-                <engine:Button text="Rate" />
+                <engine:Button text="Rate" name="rate"/>
             </engine:VisualElement>
         </engine:ScrollView>
     </engine:VisualElement>

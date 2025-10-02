@@ -13,12 +13,20 @@ Button:hover {
      background-color: var(--color-btn-primary-highlighted);
  }
 
+Button:disabled {
+    background-color: var(--color-btn-primary);
+}
+
 Button.secondary-button {
     background-color: var(--color-btn);
 }
 
 Button.secondary-button:hover {
     background-color: var(--color-btn-highlighted);
+}
+
+Button.secondary-button:disabled {
+    background-color: var(--color-btn);
 }
 
 TextField {

@@ -24,13 +24,13 @@
                     <engine:Label text="true" class="id-value-container__value" name="is-banner-supported" />
                 </engine:VisualElement>
                 <engine:VisualElement class="id-value-container">
-                    <engine:Label text="Last Banner States:" class="id-value-container__id" />
+                    <engine:Label text="Last Banner States:" class="id-value-container__id"  />
                     <engine:Label text="shown" class="id-value-container__value" name="last-banner-state"/>
                 </engine:VisualElement>
             </engine:VisualElement>
             <engine:VisualElement class="row margin-bottom">
-                <engine:Button text="Show" />
-                <engine:Button class="secondary-button" text="Hide" />
+                <engine:Button text="Show" name="show-banner"/>
+                <engine:Button class="secondary-button" text="Hide" name="hide-banner"/>
             </engine:VisualElement>
             <engine:VisualElement class="divider margin-bottom" />
             <engine:Label text="Interstitial" class="context-container__title margin-bottom" />
@@ -49,8 +49,7 @@
                 </engine:VisualElement>
             </engine:VisualElement>
             <engine:VisualElement class="row margin-bottom">
-                <engine:Button text="Show" />
-                <engine:Button class="secondary-button" text="Hide" />
+                <engine:Button text="Show" name="show-interstitial"/>
             </engine:VisualElement>
             <engine:VisualElement class="divider margin-bottom" />
             <engine:Label text="Rewarded" class="context-container__title margin-bottom" />
@@ -69,8 +68,7 @@
                 </engine:VisualElement>
             </engine:VisualElement>
             <engine:VisualElement class="row margin-bottom">
-                <engine:Button text="Show" />
-                <engine:Button class="secondary-button" text="Hide" />
+                <engine:Button text="Show" name="show-rewarded"/>
             </engine:VisualElement>
             <engine:VisualElement class="divider margin-bottom" />
             <engine:Label text="Adblock" class="context-container__title margin-bottom" />
@@ -81,7 +79,7 @@
                 </engine:VisualElement>
             </engine:VisualElement>
             <engine:VisualElement class="row margin-bottom">
-                <engine:Button text="Check AdBlock" />
+                <engine:Button text="Check AdBlock" name="adblock"/>
             </engine:VisualElement>
        ¶ </engine:ScrollView>
     </engine:VisualElement>
