@@ -21,15 +21,15 @@
             <engine:VisualElement class="id-values margin-bottom">
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Is Achievements Supported:" class="id-value-container__id" />
-                    <engine:Label text="true" class="id-value-container__value" />
+                    <engine:Label text="true" class="id-value-container__value" name="is-achievements-supported" />
                 </engine:VisualElement>
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Is Get List Supported:" class="id-value-container__id" />
-                    <engine:Label text="true" class="id-value-container__value" />
+                    <engine:Label text="true" class="id-value-container__value" name="is-get-list-supported"/>
                 </engine:VisualElement>
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Is Native Popup Supported:" class="id-value-container__id" />
-                    <engine:Label text="true" class="id-value-container__value" />
+                    <engine:Label text="true" class="id-value-container__value" name="is-native-popup-supported"/>
                 </engine:VisualElement>
             </engine:VisualElement>
             <engine:VisualElement class="row margin-bottom">

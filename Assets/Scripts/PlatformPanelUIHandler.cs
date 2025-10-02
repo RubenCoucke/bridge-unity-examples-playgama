@@ -10,6 +10,7 @@ public class PlatformPanelUIHandler : PanelUIHandler {
     private readonly Label payloadLabel;
     private readonly Label tldLabel;
     private readonly Label serverTimeLabel;
+    private readonly Label audioLabel;
     private readonly Label allGamesSupportedLabel;
     private readonly Label gameByIdSupportedLabel;
 
@@ -31,6 +32,7 @@ public class PlatformPanelUIHandler : PanelUIHandler {
         payloadLabel = uiDocument.rootVisualElement.Q<Label>("payload");
         tldLabel = uiDocument.rootVisualElement.Q<Label>("tld");
         serverTimeLabel = uiDocument.rootVisualElement.Q<Label>("server-time");
+        audioLabel = uiDocument.rootVisualElement.Q<Label>("is-audio");
         allGamesSupportedLabel = uiDocument.rootVisualElement.Q<Label>("all-games-supported");
         gameByIdSupportedLabel = uiDocument.rootVisualElement.Q<Label>("game-by-id-supported");
 
@@ -63,7 +65,7 @@ public class PlatformPanelUIHandler : PanelUIHandler {
         languageLabel.text = Bridge.platform.language;
         payloadLabel.text = string.IsNullOrWhiteSpace(Bridge.platform.payload) ? "<null>" : Bridge.platform.payload;
         tldLabel.text = string.IsNullOrWhiteSpace(Bridge.platform.tld) ? "<null>" : Bridge.platform.tld;
-        ;
+        audioLabel.text = Bridge.platform.isAudioEnabled.ToString();
         UpdateServerTime();
         allGamesSupportedLabel.text = Bridge.platform.isGetAllGamesSupported.ToString();
         gameByIdSupportedLabel.text = Bridge.platform.isGetGameByIdSupported.ToString();

@@ -21,11 +21,11 @@
             <engine:VisualElement class="id-values margin-bottom">
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Is Share Supported:" class="id-value-container__id" />
-                    <engine:Label text="true" class="id-value-container__value" />
+                    <engine:Label text="true" class="id-value-container__value" name="is-share-supported" />
                 </engine:VisualElement>
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Is Join Community Supported:" class="id-value-container__id" />
-                    <engine:Label text="true" class="id-value-container__value" />
+                    <engine:Label text="true" class="id-value-container__value" name="is-join-community-supported"/>
                 </engine:VisualElement>
             </engine:VisualElement>
             <engine:VisualElement class="row margin-bottom">
@@ -36,11 +36,11 @@
             <engine:VisualElement class="id-values margin-bottom">
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Is Invite Friends Supported:" class="id-value-container__id" />
-                    <engine:Label text="true" class="id-value-container__value" />
+                    <engine:Label text="true" class="id-value-container__value" name="is-invite-friends-supported"/>
                 </engine:VisualElement>
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Is Create Post Supported:" class="id-value-container__id" />
-                    <engine:Label text="true" class="id-value-container__value" />
+                    <engine:Label text="true" class="id-value-container__value" name="is-create-post-supported"/>
                 </engine:VisualElement>
             </engine:VisualElement>
             <engine:VisualElement class="row margin-bottom">
@@ -51,11 +51,11 @@
             <engine:VisualElement class="id-values margin-bottom">
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Is Add To Favorites Supported:" class="id-value-container__id" />
-                    <engine:Label text="true" class="id-value-container__value" />
+                    <engine:Label text="true" class="id-value-container__value" name="is-add-to-favorites-supported"/>
                 </engine:VisualElement>
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Is Add To Home Screen Supported:" class="id-value-container__id" />
-                    <engine:Label text="true" class="id-value-container__value" />
+                    <engine:Label text="true" class="id-value-container__value" name="is-add-to-home-screen-supported"/>
                 </engine:VisualElement>
             </engine:VisualElement>
             <engine:VisualElement class="row margin-bottom">
@@ -66,17 +66,16 @@
             <engine:VisualElement class="id-values margin-bottom">
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Is Rate Supported:" class="id-value-container__id" />
-                    <engine:Label text="true" class="id-value-container__value" />
+                    <engine:Label text="true" class="id-value-container__value" name="is-rate-supported"/>
                 </engine:VisualElement>
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Is External Links Allowed:" class="id-value-container__id" />
-                    <engine:Label text="true" class="id-value-container__value" />
+                    <engine:Label text="true" class="id-value-container__value" name="is-external-links-allowed"/>
                 </engine:VisualElement>
             </engine:VisualElement>
             <engine:VisualElement class="row margin-bottom">
                 <engine:Button text="Rate" />
             </engine:VisualElement>
-            ¶
         </engine:ScrollView>
     </engine:VisualElement>
 </engine:UXML>

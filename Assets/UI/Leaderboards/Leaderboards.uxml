@@ -21,7 +21,7 @@
             <engine:VisualElement class="id-values margin-bottom">
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Leaderboards Type:" class="id-value-container__id" />
-                    <engine:Label text="in_game" class="id-value-container__value" />
+                    <engine:Label text="in_game" class="id-value-container__value" name="leaderboard-type" />
                 </engine:VisualElement>
             </engine:VisualElement>
             <engine:VisualElement class="row margin-bottom">

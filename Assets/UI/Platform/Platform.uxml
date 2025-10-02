@@ -36,6 +36,10 @@
                     <engine:Label text="TLD:" class="id-value-container__id" />
                     <engine:Label text="null" class="id-value-container__value" name="tld"/>
                 </engine:VisualElement>
+                <engine:VisualElement class="id-value-container">
+                    <engine:Label text="Is Audio Enabled:" class="id-value-container__id" />
+                    <engine:Label text="null" class="id-value-container__value" name="is-audio"/>
+                </engine:VisualElement>
             </engine:VisualElement>
             <engine:VisualElement class="main-btn__container">
                 <engine:VisualElement class="main-btn__container-row">

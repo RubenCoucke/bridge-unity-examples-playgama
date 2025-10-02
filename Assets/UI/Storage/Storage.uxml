@@ -14,23 +14,23 @@
             <engine:VisualElement class="id-values margin-bottom">
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Default Storage Type:" class="id-value-container__id" />
-                    <engine:Label text="platform_internal" class="id-value-container__value" />
+                    <engine:Label text="platform_internal" class="id-value-container__value" name="storage-type" />
                 </engine:VisualElement>
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Is Local Storage Supported:" class="id-value-container__id" />
-                    <engine:Label text="true" class="id-value-container__value" />
+                    <engine:Label text="true" class="id-value-container__value" name="is-local-storage-supported"/>
                 </engine:VisualElement>
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Is Local Storage Available:" class="id-value-container__id" />
-                    <engine:Label text="true" class="id-value-container__value" />
+                    <engine:Label text="true" class="id-value-container__value" name="is-local-storage-available"/>
                 </engine:VisualElement>
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Is Platform Internal Supported:" class="id-value-container__id" />
-                    <engine:Label text="true" class="id-value-container__value" />
+                    <engine:Label text="true" class="id-value-container__value" name="is-platform-internal-supported"/>
                 </engine:VisualElement>
                 <engine:VisualElement class="id-value-container margin-bottom">
                     <engine:Label text="Is Platform Internal Available:" class="id-value-container__id" />
-                    <engine:Label text="true" class="id-value-container__value" />
+                    <engine:Label text="true" class="id-value-container__value" name="is-platform-internal-available"/>
                 </engine:VisualElement>
             </engine:VisualElement>
             <engine:VisualElement class="divider margin-bottom" />

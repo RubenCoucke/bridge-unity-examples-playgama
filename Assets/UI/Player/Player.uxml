@@ -21,19 +21,19 @@
             <engine:VisualElement class="id-values margin-bottom">
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Is Auth Supported:" class="id-value-container__id" />
-                    <engine:Label text="true" class="id-value-container__value" />
+                    <engine:Label text="true" class="id-value-container__value" name="is-auth-supported" />
                 </engine:VisualElement>
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Is Authorized:" class="id-value-container__id" />
-                    <engine:Label text="false" class="id-value-container__value" />
+                    <engine:Label text="false" class="id-value-container__value" name="is-authorized"/>
                 </engine:VisualElement>
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Player ID:" class="id-value-container__id" />
-                    <engine:Label text="null" class="id-value-container__value" />
+                    <engine:Label text="null" class="id-value-container__value" name="player-id"/>
                 </engine:VisualElement>
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Player name:" class="id-value-container__id" />
-                    <engine:Label text="null" class="id-value-container__value" />
+                    <engine:Label text="null" class="id-value-container__value" name="player-name"/>
                 </engine:VisualElement>
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Player Avatar:" class="id-value-container__id" />
