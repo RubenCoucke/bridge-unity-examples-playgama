@@ -21,11 +21,11 @@
             <engine:VisualElement class="id-values">
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Current Visibility State:" class="id-value-container__id" />
-                    <engine:Label text="visible" class="id-value-container__value" />
+                    <engine:Label text="visible" class="id-value-container__value" name="current-visibility-state" />
                 </engine:VisualElement>
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Last Visibility State:" class="id-value-container__id" />
-                    <engine:Label text="true visible" class="id-value-container__value" />
+                    <engine:Label text="true visible" class="id-value-container__value" name="last-visibility-state"/>
                 </engine:VisualElement>
             </engine:VisualElement>
         </engine:ScrollView>

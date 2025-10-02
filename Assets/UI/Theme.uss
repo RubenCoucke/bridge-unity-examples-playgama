@@ -1,6 +1,7 @@
 :root {
     --color-background: rgba(13, 13, 15, 0.92);
     --color-light-background: #29292E;
+    --color-light-background-highlighted: #3b3b42;
     --color-btn-primary: #9747FF;
     --color-btn-primary-highlighted: #9e56fd;
     --color-btn: #49494C;
@@ -77,6 +78,10 @@ Label, Button, TextField {
     background-color: var(--color-light-background);
     border-radius: 16px;
     margin-right: 8px;
+}
+
+.header-btn__back-button:hover {
+    background-color: var(--color-light-background-highlighted);
 }
 
 .context-container {

@@ -22,23 +22,19 @@
             <engine:VisualElement class="id-values margin-bottom">
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Platform ID:" class="id-value-container__id" />
-                    <engine:Label text="qa_tool" class="id-value-container__value" />
+                    <engine:Label text="qa_tool" class="id-value-container__value" name="platform-id"/>
                 </engine:VisualElement>
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Language:" class="id-value-container__id" />
-                    <engine:Label text="en" class="id-value-container__value" />
+                    <engine:Label text="en" class="id-value-container__value" name="language"/>
                 </engine:VisualElement>
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="Payload:" class="id-value-container__id" />
-                    <engine:Label text="null" class="id-value-container__value" />
+                    <engine:Label text="null" class="id-value-container__value" name="payload"/>
                 </engine:VisualElement>
                 <engine:VisualElement class="id-value-container">
                     <engine:Label text="TLD:" class="id-value-container__id" />
-                    <engine:Label text="null" class="id-value-container__value" />
-                </engine:VisualElement>
-                <engine:VisualElement class="id-value-container">
-                    <engine:Label text="Is Audio:" class="id-value-container__id" />
-                    <engine:Label text="enable" class="id-value-container__value" />
+                    <engine:Label text="null" class="id-value-container__value" name="tld"/>
                 </engine:VisualElement>
             </engine:VisualElement>
             <engine:VisualElement class="main-btn__container">
@@ -64,17 +60,26 @@
                         <AttributeOverrides element-name="text" text="Send in Game Loading Stopped" />
                     </engine:Instance>
                 </engine:VisualElement>
-                <engine:Label text="Server Time:" class="server-time__label" />
-                <engine:Button class="server-time__button margin-bottom" text="Get Server Time" />
+                <engine:VisualElement class="id-value-container margin-bottom">
+                    <engine:Label text="Server time:" class="id-value-container__id" />
+                    <engine:Label text="null" class="id-value-container__value " name="server-time"/>
+                </engine:VisualElement>
+                <engine:Button class="server-time__label server-time__button margin-bottom" text="Get Server Time" name="GetServerTimeButton" />
             </engine:VisualElement>
             <engine:VisualElement class="divider"/>
-            <engine:Label text="Is get All Games supported:" class="server-time__label" />
-            <engine:Button class="server-time__button margin-bottom" text="Get All Games" />
+            <engine:VisualElement class="id-value-container margin-bottom">
+                <engine:Label text="Is get All Games supported:" class="id-value-container__id" />
+                <engine:Label text="true" class="id-value-container__value " name="all-games-supported"/>
+            </engine:VisualElement>
+            <engine:Button class="server-time__label server-time__button margin-bottom" text="Get All Games" name="GetAllGamesButton" />
             <engine:Label enable-rich-text="true" class="get-all-games-response margin-bottom" text="[     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     ... ]"/>
             <engine:VisualElement class="divider"/>
-            <engine:Label text="Is get Game by ID supported:" class="server-time__label" />
-            <engine:TextField placeholder-text="Game ID" class="game-id-field"/>
-            <engine:Button class="server-time__button margin-bottom" text="Get Game by ID" />
+            <engine:VisualElement class="id-value-container margin-bottom">
+                <engine:Label text="Is get Game by ID supported:" class="id-value-container__id" />
+                <engine:Label text="true" class="id-value-container__value " name="game-by-id-supported"/>
+            </engine:VisualElement>
+            <engine:TextField placeholder-text="Game ID" class="server-time__label game-id-field" name="game-id-textfield"/>
+            <engine:Button class=" server-time__button margin-bottom" text="Get Game by ID" name="GetGameByIdButton"/>
         </engine:ScrollView>
     </engine:VisualElement>
 </engine:UXML>
