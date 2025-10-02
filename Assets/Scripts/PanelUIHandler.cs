@@ -37,7 +37,7 @@ public abstract class PanelUIHandler {
 
         uiDocument.rootVisualElement.focusController?.IgnoreEvent(evt);
         lastScrollPos += evt.delta.y * 0.1f;
-        lastScrollPos = Mathf.Min(maxScrollableHeight, Mathf.Max(0, lastScrollPos));
+        lastScrollPos = Mathf.Min(maxScrollableHeight + 200f, Mathf.Max(0, lastScrollPos));
         scrollView.scrollOffset = new Vector2(0, lastScrollPos);
     }
 #else

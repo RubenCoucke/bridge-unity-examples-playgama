@@ -25,9 +25,9 @@
                 </engine:VisualElement>
             </engine:VisualElement>
             <engine:VisualElement class="row margin-bottom">
-                <engine:Button text="Get" />
+                <engine:Button text="Get" name="get-button"/>
             </engine:VisualElement>
-            <engine:Label enable-rich-text="true" class="remote-config-response" text="[     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     ... ]"/>
+            <engine:Label enable-rich-text="true" name="response" class="remote-config-response" text="[     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     ... ]"/>
         </engine:ScrollView>
     </engine:VisualElement>
 </engine:UXML>

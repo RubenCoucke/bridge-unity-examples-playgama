@@ -1,7 +1,7 @@
 {
     "platforms": {
         "game_distribution": {
-            "gameId": "test"
+            "gameId": ""
         },
         "telegram": {
             "adsgramBlockId": ""

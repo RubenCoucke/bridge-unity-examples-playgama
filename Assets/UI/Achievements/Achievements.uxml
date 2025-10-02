@@ -33,15 +33,15 @@
                 </engine:VisualElement>
             </engine:VisualElement>
             <engine:VisualElement class="row margin-bottom">
-                <engine:TextField class="text-field" placeholder-text="Key" name="key-field"/>
+                <engine:TextField class="text-field" placeholder-text="Key" name="key-field" />
                 <engine:TextField class="text-field" placeholder-text="Name" name="value-field"/>
             </engine:VisualElement>
             <engine:VisualElement class="row margin-bottom">
-                <engine:Button text="Unlock" />
-                <engine:Button text="Get List" />
-                <engine:Button text="Show Native Popup" />
+                <engine:Button text="Unlock" name="unlock" />
+                <engine:Button text="Get List" name="get-list"/>
+                <engine:Button text="Show Native Popup" name="show-native-popup"/>
             </engine:VisualElement>
-            <engine:Label enable-rich-text="true" class="achievements-response" text="[     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     ... ]"/>
+            <engine:Label enable-rich-text="true" name="response" class="achievements-response" text="[     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     ... ]"/>
         </engine:ScrollView>
     </engine:VisualElement>
 </engine:UXML>

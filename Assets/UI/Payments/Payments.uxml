@@ -25,19 +25,19 @@
                 </engine:VisualElement>
             </engine:VisualElement>
             <engine:VisualElement class="row margin-bottom">
-                <engine:TextField class="text-field margin-right" placeholder-text="Product ID"/>
-                <engine:Button text="Purchase" />
+                <engine:TextField class="text-field margin-right" placeholder-text="Product ID" name="purchase-field"/>
+                <engine:Button text="Purchase" name="purchase-button" />
             </engine:VisualElement>
             <engine:VisualElement class="row margin-bottom">
-                <engine:TextField class="text-field margin-right" placeholder-text="Product ID"/>
-                <engine:Button text="Consume" />
+                <engine:TextField class="text-field margin-right" placeholder-text="Product ID" name="consume-field"/>
+                <engine:Button text="Consume" name="consume-button"/>
             </engine:VisualElement>
             <engine:VisualElement class="divider margin-bottom"/>
             <engine:VisualElement class="row margin-bottom">
-                <engine:Button text="Get Catalog" />
-                <engine:Button text="Get Purchases" />
+                <engine:Button text="Get Catalog" name="get-catalog-button" />
+                <engine:Button text="Get Purchases" name="get-purchases-button"/>
             </engine:VisualElement>
-            <engine:Label enable-rich-text="true" class="purchases-response" text="[     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     ... ]"/>
+            <engine:Label enable-rich-text="true" name="response" class="purchases-response" text="[     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     ... ]"/>
         </engine:ScrollView>
     </engine:VisualElement>
 </engine:UXML>

@@ -25,16 +25,16 @@
                 </engine:VisualElement>
             </engine:VisualElement>
             <engine:VisualElement class="row margin-bottom">
-                <engine:TextField class="text-field margin-right" placeholder-text="Score"/>
-                <engine:TextField class="text-field margin-right" placeholder-text="Leaderboard ID"/>
-                <engine:Button text="Set Score" />
+                <engine:TextField class="text-field margin-right" placeholder-text="Score" name="score-field"/>
+                <engine:TextField class="text-field margin-right" placeholder-text="Leaderboard ID" name="leaderboard-name-field"/>
+                <engine:Button text="Set Score" name="set-score"/>
             </engine:VisualElement>
             <engine:VisualElement class="divider margin-bottom"/>
             <engine:VisualElement class="row margin-bottom">
-                <engine:TextField class="text-field margin-right" placeholder-text="Leaderboard ID"/>
-                <engine:Button text="Get Entries" />
+                <engine:TextField class="text-field margin-right" placeholder-text="Leaderboard ID" name="leaderboard-id-field"/>
+                <engine:Button text="Get Entries" name="get-entries" />
             </engine:VisualElement>
-            <engine:Label enable-rich-text="true" class="leaderboards-response" text="[     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     ... ]"/>
+            <engine:Label enable-rich-text="true" name="response" class="leaderboards-response" text="[     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     ... ]"/>
         </engine:ScrollView>
     </engine:VisualElement>
 </engine:UXML>
