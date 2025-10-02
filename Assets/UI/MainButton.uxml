@@ -5,7 +5,6 @@
     xmlns:engine="UnityEngine.UIElements"
     xmlns:editor="UnityEditor.UIElements"
     xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd">
-    <engine:Style src="Main.uss" />
     <engine:VisualElement class="main-btn">
         <engine:VisualElement class="main-btn__icon">
             <engine:VisualElement name="icon"/>
