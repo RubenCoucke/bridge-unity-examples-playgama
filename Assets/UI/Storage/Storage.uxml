@@ -39,13 +39,13 @@
                 <engine:TextField placeholder-text="Level ID" name="level-field" />
             </engine:VisualElement>
             <engine:RadioButtonGroup class="margin-bottom">
-                <engine:RadioButton text="Local Storage" value="true" />
-                <engine:RadioButton text="Platform Internal" />
+                <engine:RadioButton text="Local Storage" value="true" name="local-storage"/>
+                <engine:RadioButton text="Platform Internal" name="platform-storage"/>
             </engine:RadioButtonGroup>
             <engine:VisualElement class="row">
-                <engine:Button text="Load Data" />
-                <engine:Button text="Save Data" />
-                <engine:Button text="Delete Data" class="secondary-button" />
+                <engine:Button text="Load Data" name="load-data" />
+                <engine:Button text="Save Data" name="save-data"/>
+                <engine:Button text="Delete Data" class="secondary-button" name="delete-data"/>
             </engine:VisualElement>
         </engine:ScrollView>
     </engine:VisualElement>
