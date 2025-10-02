@@ -76,7 +76,7 @@
                 <engine:Label text="true" class="id-value-container__value " name="all-games-supported"/>
             </engine:VisualElement>
             <engine:Button class="server-time__label server-time__button margin-bottom" text="Get All Games" name="GetAllGamesButton" />
-            <engine:Label enable-rich-text="true" class="get-all-games-response margin-bottom" text="[     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     ... ]"/>
+            <engine:Label enable-rich-text="true" name="all-games-response" class="get-all-games-response margin-bottom" text="[     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     ... ]"/>
             <engine:VisualElement class="divider"/>
             <engine:VisualElement class="id-value-container margin-bottom">
                 <engine:Label text="Is get Game by ID supported:" class="id-value-container__id" />
@@ -84,6 +84,7 @@
             </engine:VisualElement>
             <engine:TextField placeholder-text="Game ID" class="server-time__label game-id-field" name="game-id-textfield"/>
             <engine:Button class=" server-time__button margin-bottom" text="Get Game by ID" name="GetGameByIdButton"/>
+            <engine:Label enable-rich-text="true" name="game-response" class="get-all-games-response margin-bottom" text="[     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     {         appID: string;         title: string;         url: string;         coverURL: string;         iconURL: string;     },     ... ]"/>
         </engine:ScrollView>
     </engine:VisualElement>
 </engine:UXML>

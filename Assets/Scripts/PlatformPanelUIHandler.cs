@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Globalization;
+using Newtonsoft.Json;
 using Playgama;
 using Playgama.Modules.Platform;
 using UnityEngine.UIElements;
@@ -13,6 +14,8 @@ public class PlatformPanelUIHandler : PanelUIHandler {
     private readonly Label audioLabel;
     private readonly Label allGamesSupportedLabel;
     private readonly Label gameByIdSupportedLabel;
+    private readonly Label allGamesResponseLabel;
+    private readonly Label gameResponseLabel;
 
     private readonly VisualElement sendGameReadyButton;
     private readonly VisualElement sendGameplayStartedButton;
@@ -35,6 +38,8 @@ public class PlatformPanelUIHandler : PanelUIHandler {
         audioLabel = uiDocument.rootVisualElement.Q<Label>("is-audio");
         allGamesSupportedLabel = uiDocument.rootVisualElement.Q<Label>("all-games-supported");
         gameByIdSupportedLabel = uiDocument.rootVisualElement.Q<Label>("game-by-id-supported");
+        allGamesResponseLabel = uiDocument.rootVisualElement.Q<Label>("all-games-response");
+        gameResponseLabel = uiDocument.rootVisualElement.Q<Label>("game-response");
 
         sendGameReadyButton = uiDocument.rootVisualElement.Q<VisualElement>("SendGameReadyButton");
         sendGameplayStartedButton = uiDocument.rootVisualElement.Q<VisualElement>("SendGameplayStartedButton");
@@ -48,12 +53,30 @@ public class PlatformPanelUIHandler : PanelUIHandler {
 
         gameIdTextField = uiDocument.rootVisualElement.Q<TextField>("game-id-textfield");
 
+        sendGameplayStoppedButton.SetEnabled(false);
+        sendInGameLoadingStoppedButton.SetEnabled(false);
         sendGameReadyButton.RegisterCallback<ClickEvent>(_ => Bridge.platform.SendMessage(PlatformMessage.GameReady));
-        sendGameplayStartedButton.RegisterCallback<ClickEvent>(_ => Bridge.platform.SendMessage(PlatformMessage.GameplayStarted));
-        sendInGameLoadingStartedButton.RegisterCallback<ClickEvent>(_ => Bridge.platform.SendMessage(PlatformMessage.InGameLoadingStarted));
+        sendGameplayStartedButton.RegisterCallback<ClickEvent>(_ => {
+            Bridge.platform.SendMessage(PlatformMessage.GameplayStarted);
+            sendGameplayStoppedButton.SetEnabled(true);
+            sendGameplayStartedButton.SetEnabled(false);
+        });
+        sendInGameLoadingStartedButton.RegisterCallback<ClickEvent>(_ => {
+            Bridge.platform.SendMessage(PlatformMessage.InGameLoadingStarted);
+            sendInGameLoadingStoppedButton.SetEnabled(true);
+            sendInGameLoadingStartedButton.SetEnabled(false);
+        });
         sendPlayerGotAchievementButton.RegisterCallback<ClickEvent>(_ => Bridge.platform.SendMessage(PlatformMessage.PlayerGotAchievement));
-        sendGameplayStoppedButton.RegisterCallback<ClickEvent>(_ => Bridge.platform.SendMessage(PlatformMessage.GameplayStopped));
-        sendInGameLoadingStoppedButton.RegisterCallback<ClickEvent>(_ => Bridge.platform.SendMessage(PlatformMessage.InGameLoadingStopped));
+        sendGameplayStoppedButton.RegisterCallback<ClickEvent>(_ => {
+            Bridge.platform.SendMessage(PlatformMessage.GameplayStopped);
+            sendGameplayStartedButton.SetEnabled(true);
+            sendGameplayStoppedButton.SetEnabled(false);
+        });
+        sendInGameLoadingStoppedButton.RegisterCallback<ClickEvent>(_ => {
+            Bridge.platform.SendMessage(PlatformMessage.InGameLoadingStopped);
+            sendInGameLoadingStartedButton.SetEnabled(true);
+            sendInGameLoadingStoppedButton.SetEnabled(false);
+        });
         getServerTimeButton.RegisterCallback<ClickEvent>(_ => UpdateServerTime());
         getAllGamesButton.RegisterCallback<ClickEvent>(_ => GetAllGames());
         getGameByIdButton.RegisterCallback<ClickEvent>(_ => GetGameById());
@@ -61,6 +84,8 @@ public class PlatformPanelUIHandler : PanelUIHandler {
 
     public override void Toggle(bool enable) {
         base.Toggle(enable);
+        allGamesResponseLabel.text = string.Empty;
+        gameResponseLabel.text = string.Empty;
         platformIdLabel.text = Bridge.platform.id;
         languageLabel.text = Bridge.platform.language;
         payloadLabel.text = string.IsNullOrWhiteSpace(Bridge.platform.payload) ? "<null>" : Bridge.platform.payload;
@@ -69,6 +94,8 @@ public class PlatformPanelUIHandler : PanelUIHandler {
         UpdateServerTime();
         allGamesSupportedLabel.text = Bridge.platform.isGetAllGamesSupported.ToString();
         gameByIdSupportedLabel.text = Bridge.platform.isGetGameByIdSupported.ToString();
+        getAllGamesButton.SetEnabled(Bridge.platform.isGetAllGamesSupported);
+        getGameByIdButton.SetEnabled(Bridge.platform.isGetGameByIdSupported);
     }
 
     private void UpdateServerTime() {
@@ -81,15 +108,19 @@ public class PlatformPanelUIHandler : PanelUIHandler {
             if (!success) {
                 return;
             }
+
+            allGamesSupportedLabel.text = JsonConvert.SerializeObject(list);
         });
     }
 
     private void GetGameById() {
         if (string.IsNullOrEmpty(gameIdTextField.value)) return;
-        Bridge.platform.GetGameById(new Dictionary<string, object>(){{"gameId", gameIdTextField.value}}, (success, gameInfo) => {
+        Bridge.platform.GetGameById(new Dictionary<string, object> { { "gameId", gameIdTextField.value } }, (success, gameInfo) => {
             if (!success) {
                 return;
             }
+
+            gameResponseLabel.text = JsonConvert.SerializeObject(gameInfo);
         });
     }
 }

@@ -23,6 +23,10 @@
     --color-code-block: #1D1D21;
 }
 
+:disabled {
+    opacity: 0.5;
+}
+
 Label, Button, TextField {
     color: var(--color-white);
     -unity-font: url("project://database/Assets/TextMesh Pro/Fonts/GeistMono.ttf");
@@ -142,6 +146,18 @@ Label, Button, TextField {
 
 .main-btn:hover  > .main-btn__icon > VisualElement {
     -unity-background-image-tint-color: var(--color-btn);
+}
+
+.main-btn:disabled > VisualElement > Label {
+    color: var(--color-white);
+}
+
+.main-btn:disabled {
+    background-color: var(--color-btn);
+}
+
+.main-btn:disabled  > .main-btn__icon > VisualElement {
+    -unity-background-image-tint-color: var(--color-white);
 }
 
 .hidden {

@@ -35,7 +35,7 @@ public class AdvertisingPanelUIHandler : PanelUIHandler {
         OnChangeBannerState(Bridge.advertisement.bannerState);
         isInterstitialSupportedLabel.text = Bridge.advertisement.isInterstitialSupported.ToString();
         minimumDelayBetweenInterstitialLabel.text = Bridge.advertisement.minimumDelayBetweenInterstitial.ToString();
-        OnChangeInterstitialState(Bridge.advertisement.interstitialState);
+        OnChangeInterstitialState(Playgama.Bridge.advertisement.interstitialState);
         isRewardedSupportedLabel.text = Bridge.advertisement.isRewardedSupported.ToString();
         rewardedPlacementLabel.text = Bridge.advertisement.rewardedPlacement;
         OnChangeRewardedState(Bridge.advertisement.rewardedState);

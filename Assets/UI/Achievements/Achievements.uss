@@ -13,6 +13,10 @@ Button:hover {
     background-color: var(--color-btn-primary-highlighted);
 }
 
+Button:disabled {
+    background-color: var(--color-btn-primary);
+}
+
 TextField {
     flex: 1;
     height: 40px;

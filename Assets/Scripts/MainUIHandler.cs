@@ -1,5 +1,6 @@
 ﻿using System;
 using Playgama;
+using Playgama.Modules.Platform;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -55,6 +56,7 @@ public class MainUIHandler : MonoBehaviour {
         InitButton("AchievementsButton", achievements);
         InitButton("RemoteConfigButton", remoteConfig);
         Toggle(true);
+        Bridge.platform.SendMessage(PlatformMessage.GameReady);
     }
 
     private void InitButton(string buttonName, PanelUIHandler panelUIHandler) {
